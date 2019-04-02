@@ -33,8 +33,10 @@
         </ul>
         <span class="navbar-divider mx-2"></span>
         <div class="form-inline">
-          <button class="btn btn-sm btn-outline text-light px-3 mx-1">Login</button>
-          <button class="btn btn-sm btn-outline-light px-3 mx-1">Register</button>
+          <button class="btn btn-sm btn-outline text-light px-3 mx-1" data-toggle="modal" data-target="
+            #loginModal">Login</button>
+          <button class="btn btn-sm btn-outline-light px-3 mx-1" data-toggle="modal"
+          data-target="#registerModal">Register</button>
         </div>
       </div>
     </div>
@@ -73,17 +75,15 @@
       </svg>
     </a>
   </header>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Data</li>
-    </ol>
-  </nav>
   <section class="jumbotron jumbotron-fluid text-center my-5">
-    <div class="container">
+    <div class="container mw-1000p">
       <h2 class="h2 mb-4">Why you need to change a job now?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+        rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
     </div>
   </section>
   <section class="conatiner-fluid bg-primary text-light">
@@ -179,31 +179,110 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Cillum dolore eu fugiat nulla pariatur. </p>
-          <footer class="blockquote-footer text-right">
-            <div>Jakub Kowalczyk</div>
-            <div>Product designer at Symu.co</div>
-          </footer>
+        <footer class="blockquote-footer text-right">
+          <div>Jakub Kowalczyk</div>
+          <div>Product designer at Symu.co</div>
+        </footer>
       </blockquote>
     </div>
   </div>
   <section class="jumbotron jumbotron-fluid text-center my-5">
-      <div class="container">
-        <h2 class="h2 mb-4">Subscribe our newsletter</h2>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis.</p>
-        <div class="input-group mw-520p mx-auto">
-            <input type="text" class="form-control" placeholder="Your email adress..." aria-label="Your email adress..." aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+    <div class="container mw-1000p">
+      <h2 class="h2 mb-4">Subscribe our newsletter</h2>
+      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis.</p>
+      <div class="input-group mw-520p mx-auto">
+        <input type="text" class="form-control" placeholder="Your email adress..." aria-label="Your email adress..."
+          aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid border-top">
+    <div class="container d-flex justify-content-between pt-3">
+      <p>Copyright © 2016. All rights reserved.</p>
+      <p>Designed by <a href="#">Symu.co</a></p>
+    </div>
+  </footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="loginEmail">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+              <div class="invalid-feedback">
+                Please write correct email.
+              </div>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+              <div class="invalid-feedback">
+                Please write password.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
-    </section>
-    <footer class="container-fluid border-top">
-      <div class="container d-flex justify-content-between pt-3">
-        <p>Copyright © 2016. All rights reserved.</p>
-        <p>Designed by Symu.co</p>
+    </div>
+  </div>
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="registerEmail">Email address</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Enter email" required>
+              <div class="invalid-feedback">
+                Please write correct email.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Name</label>
+              <input type="text" class="form-control" id="registerName" placeholder="Write name" required>
+              <div class="invalid-feedback">
+                Please write your name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Password</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
+              <div class="invalid-feedback">
+                Please write password.
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox mb-3">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">By signing up you agree to our <a href="#">Terms of Service</a> and <a  href="#">Privacy Policy</a></label>
+              <div class="invalid-feedback">You must accept</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
-    </footer>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
@@ -217,12 +296,32 @@
     const $navBar = $('#navbar');
     $(window).on("scroll", () => {
       if ($navBar.offset().top > 0) {
-        $navBar.addClass("bg-primary");
+        $navBar.addClass("bg-dark");
       } else {
-        $navBar.removeClass("bg-primary");
+        $navBar.removeClass("bg-dark");
       }
     });
   </script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 
 </html>

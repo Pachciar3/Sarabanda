@@ -71,7 +71,7 @@
   background-image: url(../images/author.jpg);
   background-size: auto 100%;
   background-position-x: 10%;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   color: #FFF;
 }
@@ -81,6 +81,9 @@
 
 .mw-520p{
   max-width: 520px;
+}
+.mw-1000p{
+  max-width: 1000px;
 }
 @media(min-width: 400px){
   .job{
