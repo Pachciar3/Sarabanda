@@ -49,21 +49,19 @@
 .jobs{
   padding: 50px 0px;
 }
-.jobs-carousel{
-  display: flex;
-  justify-content: center;
-}
+
 .job{
-  width: 90%;
-  min-height: 340px;
-  opacity: 0.5;
+  opacity: 0.3;
   margin-right: 20px;
   margin-left: 20px;
-  flex-shrink: 0;
   padding: 20px 10px;
 }
-.job:nth-child(3){
+.job.slick-active{
+  cursor: pointer;
+}
+.job.slick-current{
   opacity: 1;
+  cursor: initial;
 }
 
 .quote{
@@ -92,29 +90,25 @@
 }
 @media(min-width: 576px){
   .job{
-    width: 70%;
     padding: 45px 30px;
   }
 }
-@media(min-width: 768px){
+/* @media(min-width: 768px){
   .job{
     width: 60%;
   }
-}
+} */
 @media(min-width: 992px){
   .jobs{
     padding: 100px 0px 140px;
   }
-  .job{
-    width: 45%;
-  }
+
   .quote .blockquote{
     width: 50%;
   }
 }
 @media(min-width: 1200px){
   .job{
-    width: 30%;
     padding: 50px 45px;
   }
 }
