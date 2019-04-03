@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Sarabanda</a>
+      <a class="navbar-brand" href="#" title="go to home">Sarabanda</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,15 +52,14 @@
         </div>
       </div>
       <div class="input-group input-group-lg bg-light rounded-sm">
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search"
-          aria-describedby="button-addon2">
-        <select class="custom-select" id="inputGroupSelect01">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <select class="custom-select" id="inputGroupSelect01" aria-label="Choose job location">
           <option selected>Location</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
-        <button class="btn btn-sm btn-primary my-2 mx-2 px-4" type="button" id="button-addon2">Find a
+        <button class="btn btn-sm btn-primary my-2 mx-2 px-4" type="button">Find a
           job</button>
       </div>
     </div>
@@ -107,7 +106,7 @@
   <section class="jobs">
     <h2 class="h2 text-center mb-5">Featured job offers</h2>
     <div class="jobs-carousel overflow-hidden">
-      <article class="job border">
+      <article class="job border" role="option" aria-label="Job offert">
         <div class="media mb-2">
           <img src="images/logo.png" class="mr-4 img-fluid" alt="My logo">
           <div class="media-body">
@@ -120,7 +119,7 @@
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         <a href="#">Read more</a>
       </article>
-      <article class="job border">
+      <article class="job border" role="option" aria-label="Job offert">
         <div class="media mb-2">
           <img src="images/logo.png" class="mr-4 img-fluid" alt="My logo">
           <div class="media-body">
@@ -133,7 +132,7 @@
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         <a href="#">Read more</a>
       </article>
-      <article class="job border">
+      <article class="job border" role="option" aria-label="Job offert">
         <div class="media mb-2">
           <img src="images/logo.png" class="mr-4 img-fluid" alt="My logo">
           <div class="media-body">
@@ -146,7 +145,7 @@
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         <a href="#">Read more</a>
       </article>
-      <article class="job border">
+      <article class="job border" role="option" aria-label="Job offert">
         <div class="media mb-2">
           <img src="images/logo.png" class="mr-4 img-fluid" alt="My logo">
           <div class="media-body">
@@ -159,7 +158,7 @@
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         <a href="#">Read more</a>
       </article>
-      <article class="job border">
+      <article class="job border" role="option" aria-label="Job offert">
         <div class="media mb-2">
           <img src="images/logo.png" class="mr-4 img-fluid" alt="My logo">
           <div class="media-body">
@@ -196,9 +195,9 @@
         aliquip ex ea commodo consequat. Duis.</p>
       <div class="input-group mw-520p mx-auto">
         <input type="text" class="form-control" placeholder="Your email adress..." aria-label="Your email adress..."
-          aria-describedby="button-addon2">
+          aria-describedby="newsletter-btn">
         <div class="input-group-append">
-          <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+          <button class="btn btn-primary" type="button" id="newsletter-btn">Subscribe</button>
         </div>
       </div>
     </div>
